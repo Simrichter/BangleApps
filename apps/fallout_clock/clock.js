@@ -66,7 +66,7 @@ function getCurrentDate () {
     const year = d.getFullYear()
     const month = d.getMonth()
     const day = d.getDate()
-    const display = `${month + 1}.${day.toString().padStart(2, 0)}.${year}`
+    const display = `${day.toString().padStart(2, 0)}.${month + 1}.${year}`
     return display
   } catch (e) {
     console.log(e)
